@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <link rel="shortcut icon" href="Yaser.jpg" type="image/x-icon" />
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<title>yaserfan_21 | Şarkılar</title>
+
+<div class="p">
+<h1 style="color:pink;">yaserfan_21</h1>
+<p style="font-size:1.2em;">Yaser Karaaslan</p>
+<img src="Songs/yaserkaraaslan.jpg" width="150" height="150">
+<br>
+</div>
+<script>
+var music = new Audio('Songs/Yaser_Karaaslan.mp3');
+var music2 = new Audio('Songs/YASER_RAP.mp3');
+
+function YaserKaraaslanPlay(){
+  music.play();
+  music2.pause();
+}
+
+function YaserKaraaslanPause(){
+  music.pause();
+  }
+
+function YaserRapPlay(){
+  music2.play();
+  music.pause();
+}
+
+function YaserRapPause(){
+  music2.pause();
+  }
+</script>
+
+<div class="block">
+    <button onclick="YaserKaraaslanPlay()"; style="background:transparent url(Play.png) no-repeat left top; width:100px; height:100px;"></button>
+    <br>
+    <button onclick="YaserKaraaslanPause()"; style="background:transparent url(Pause.png) no-repeat left top; width:100px; height:100px;"></button>
+    <br>
+    <button onclick="music.loop=true;"; style="background:transparent url(Repeat.png) no-repeat left top; width:100px; height:100px;"></button>
+    </div>
+
+    <div class="p">
+<p style="font-size:1.2em;">YASER RAP</p>
+<img src="Songs/yaserrap.jpg" width="150" height="150">
+<br>
+</div>
+
+<div class="block">
+    <button onclick="YaserRapPlay()"; style="background:transparent url(Play.png) no-repeat left top; width:100px; height:100px;"></button>
+    <br>
+    <button onclick="YaserRapPause()"; style="background:transparent url(Pause.png) no-repeat left top; width:100px; height:100px;"></button>
+    <br>
+    <button onclick="music.loop=true;"; style="background:transparent url(Repeat.png) no-repeat left top; width:100px; height:100px;"></button>
+    </div>
