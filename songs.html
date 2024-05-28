@@ -17,10 +17,12 @@
 <script>
 var music = new Audio('Songs/Yaser_Karaaslan.mp3');
 var music2 = new Audio('Songs/YASER_RAP.mp3');
+var music3 = new Audio('Songs/Savcılık.mp3')
 
 function YaserKaraaslanPlay(){
   music.play();
   music2.pause();
+  music3.pause();
 }
 
 function YaserKaraaslanPause(){
@@ -30,9 +32,20 @@ function YaserKaraaslanPause(){
 function YaserRapPlay(){
   music2.play();
   music.pause();
+  music3.pause();
 }
 
 function YaserRapPause(){
+  music2.pause();
+  }
+
+function SavcilikPlay(){
+  music3.play();
+  music.pause();
+  music2.pause();
+}
+
+function SavcilikPause(){
   music2.pause();
   }
 </script>
@@ -59,6 +72,19 @@ function YaserRapPause(){
     <button onclick="music.loop=true;"; style="background:transparent url(Repeat.png) no-repeat left top; width:100px; height:100px;"></button>
     </div>
 
+    <div class="p">
+<p style="font-size:1.2em;">Savcılık</p>
+<img src="Songs/Savcılık.jpg" width="150" height="150">
+<br>
+</div>
+
+<div class="block">
+    <button onclick="SavcilikPlay()"; style="background:transparent url(Play.png) no-repeat left top; width:100px; height:100px;"></button>
+    <br>
+    <button onclick="SavcilikPause()"; style="background:transparent url(Pause.png) no-repeat left top; width:100px; height:100px;"></button>
+    <br>
+    <button onclick="music.loop=true;"; style="background:transparent url(Repeat.png) no-repeat left top; width:100px; height:100px;"></button>
+    </div>
     
 
     <div id="disqus_thread"></div>
