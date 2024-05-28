@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <link rel="shortcut icon" href="Yaser.jpg" type="image/x-icon" />
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<title>yaserfan_21 | Şarkılar</title>
+
+<div class="p">
+<h1 style="color:pink;">yaserfan_21</h1>
+<p style="font-size:1.2em;">Yaser Karaaslan</p>
+<img src="Songs/yaserkaraaslan.jpg" width="300" height="300">
+<br>
+</div>
+<script>
+var music = new Audio('Songs/Yaser_Karaaslan.mp3');
+var music2 = new Audio('Songs/YASER_RAP.mp3');
+
+function YaserKaraaslanPlay(){
+  music.play();
+  music2.pause();
+}
+
+function YaserKaraaslanPause(){
+  music.pause();
+  }
+
+function YaserRapPlay(){
+  music2.play();
+  music.pause();
+}
+
+function YaserRapPause(){
+  music2.pause();
+  }
+</script>
+
+<div class="block">
+    <button onclick="YaserKaraaslanPlay()"; style="background:transparent url(Playmobil.png) no-repeat left top; width:250px; height:250px;"></button>
+    <br>
+    <button onclick="YaserKaraaslanPause()"; style="background:transparent url(Pausemobil.png) no-repeat left top; width:250px; height:250px;"></button>
+    <br>
+    <button onclick="music.loop=true;"; style="background:transparent url(Repeatmobil.png) no-repeat left top; width:250px; height:250px;"></button>
+    </div>
+
+    <div class="p">
+<p style="font-size:1.2em;">YASER RAP</p>
+<img src="Songs/yaserrap.jpg" width="250" height="250">
+<br>
+</div>
+
+<div class="block">
+    <button onclick="YaserRapPlay()"; style="background:transparent url(Playmobil.png) no-repeat left top; width:250px; height:250px;"></button>
+    <br>
+    <button onclick="YaserRapPause()"; style="background:transparent url(Pausemobil.png) no-repeat left top; width:250px; height:250px;"></button>
+    <br>
+    <button onclick="music.loop=true;"; style="background:transparent url(Repeatmobil.png) no-repeat left top; width:250px; height:250px;"></button>
+    </div>
+
+    
+
+    <div id="disqus_thread"></div>
+    <script>
+        var disqus_config = function () {
+        this.page.url = 'https://yaserfan21.github.io';
+        this.page.identifier = 'songs';
+        this.page.title = 'yaserfan_21 Şarkılar';
+        };
+        (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://yaserfan-21.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
