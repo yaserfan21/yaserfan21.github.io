@@ -18,6 +18,7 @@
 var music = new Audio('Songs/Yaser_Karaaslan.mp3');
 var music2 = new Audio('Songs/YASER_RAP.mp3');
 var music3 = new Audio('Songs/Savcılık.mp3')
+var music4 = new Audio('Songs/Defterdeolur.mp3')
 
 function YaserKaraaslanPlay(){
   music.play();
@@ -47,6 +48,17 @@ function SavcilikPlay(){
 
 function SavcilikPause(){
   music3.pause();
+  }
+
+function DefterdeolurPlay(){
+  music4.play();
+  music.pause();
+  music2.pause();
+  music3.pause();
+}
+
+function DefterdeolurPause(){
+  music4.pause();
   }
 </script>
 
@@ -314,7 +326,78 @@ function SavcilikPause(){
     </div>
 
 
-    
+    <div class="p">
+        <p style="font-size:1.2em;">Defter de olur</p>
+        <img src="Songs/Defterdeolur.png" width="150" height="150">
+        <br>
+        </div>
+        
+        <div class="block">
+            <button onclick="DefterdeolurPlay()"; style="background:transparent url(Play.png) no-repeat left top; width:100px; height:100px;"></button>
+            <br>
+            <button onclick="DefterdeolurPause()"; style="background:transparent url(Pause.png) no-repeat left top; width:100px; height:100px;"></button>
+            <br>
+            <button onclick="music.loop=true;"; style="background:transparent url(Repeat.png) no-repeat left top; width:100px; height:100px;"></button>
+            </div>
+
+
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Sözler Butonu</title>
+            <style>
+                #message4 {
+                    display: none;
+                    white-space: pre-wrap; /* Metindeki boşlukları ve yeni satırları korur */
+                    border: 1px solid #ccc;
+                    padding: 10px;
+                    margin-top: 10px;
+                    color: white; /* Yazının rengi */
+                }
+            </style>
+            <script>
+                function toggleMessage4() {
+                    var message = document.getElementById('message4');
+                    if (message.style.display === 'none' || message.style.display === '') {
+                        message.style.display = 'block';
+                    } else {
+                        message.style.display = 'none';
+                    }
+                }
+            </script>
+        </head>
+        <body>
+            <button onclick="toggleMessage4()">Sözler</button>
+            <div id="message4">
+                Açıklama yapma!<br>
+                <br>
+                Ne diyün lan<br>
+                Ne diyon lan sen!<br>
+                Kafama at!<br>
+                <br>
+                (Oğlum yanlış kağıtları getirmişim la)<br>
+                <br>
+                Getirmeyen eksi alıyor<br>
+                Adım adım da olur<br>
+                Tamam defter de olsun<br>
+                <br>
+                Çık tahtaya ben malım de<br>
+                Yo mu?<br>
+                <br>
+                Lan şebek <br>
+                Fen kitabını getir<br>
+                Defter de olur<br>
+                Adım adım da<br>
+                Açıklama yapma<br>
+                Sözlü notundan kırıyorum oğlum<br>
+                <br>
+                Defter de olur<br>
+                Açıklama yapma<br>
+                Sözlü notundan kırıyorum oğlum<br>
+                <br>
+                Defter de olur...
+            </div>
+
+
 
     <div id="disqus_thread"></div>
     <script>
